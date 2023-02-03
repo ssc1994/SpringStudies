@@ -11,11 +11,11 @@
 <h3>스코어리스트</h3>
 
 <c:forEach items="${list }" var="article" varStatus="num">
-	${num.index }
+	${num.index+1 }
 	${article.name }
 	${article.kor }
 	${article.eng }
-	<a href="delete?num=${num.index }">삭제</a>
+	<a href="delete?num=${article.num }">삭제</a>
 	<br/>
 </c:forEach>
 

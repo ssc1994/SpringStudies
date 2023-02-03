@@ -1,0 +1,14 @@
+# varchar2 -> varchar
+# number(10) -> int
+# date -> date or timestamp
+# 시퀀스 -> auto_increment
+# 함수 -> 구글에 찾아봄
+# 조인 -> 완벽동일
+# 서브쿼리 -> 테이블 엘리어스가 필수
+# mysql은 version별로 대소문자를 구분할 수도 있고, 구분을 안할 수도있음
+create table score (
+   num int primary key auto_increment,
+    name varchar(30) not null,
+    kor int default 0,
+    eng int default 0
+);
