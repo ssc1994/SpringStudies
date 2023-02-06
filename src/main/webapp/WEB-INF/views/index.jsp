@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="././resources/css/swiper.min.css">
-<link rel="stylesheet" href="././resources/css/common.css">
-<script src="././resources/js/jquery-1.11.3.min.js"></script>
-<script src="././resources/js/rollmain.js"></script>
-<script src="././resources/js/jquery.easing.js"></script>	
-<script src="././resources/js/common.js"></script>  
-<script src="././resources/js/jquery.smooth-scroll.min.js"></script> 
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/common.css">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/rollmain.js"></script>
+<script src="js/jquery.easing.js"></script>	
+<script src="js/common.js"></script>  
+<script src="js/jquery.smooth-scroll.min.js"></script> 
 
-<script type="text/javascript" src="././resources/js/swiper.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
 <script type="text/javascript">
    $(document).ready(function(){
 		var swiper = new Swiper('.swiper-container', {
@@ -95,21 +95,21 @@
                     <li class="imglist0">
                         <div class="roll_content">
                             <a href="javascript:;">
-                            <img src="././resources/img/img_slidecontents01.png" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?"></a>
+                            <img src="img/img_slidecontents01.png" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?"></a>
                             <p class="roll_txtline">BE TOURIST FOR BETTER LIFE</p>
                         </div>
                     </li>
                     <li class="imglist1">
                         <div class="roll_content">
                             <a href="javascript:;">
-                            <img src="././resources/img/img_slidecontents02.png" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?"></a>
+                            <img src="img/img_slidecontents02.png" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?"></a>
                             <p class="roll_txtline">BE TOURIST FOR BETTER LIFE</p>
                         </div>
                     </li>
                     <li class="imglist2">
                         <div class="roll_content">
                             <a href="javascript:;">
-                            <img src="././resources/img/img_slidecontents03.png" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?"></a>
+                            <img src="img/img_slidecontents03.png" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?"></a>
                             <p class="roll_txtline">BE TOURIST FOR BETTER LIFE</p>
                         </div>
                     </li>
@@ -117,11 +117,11 @@
 
                 <div class="rollbtnArea">
                     <ul class="rollingbtn">
-                        <li class="seq butt0"><a href="#butt"><img src="././resources/img/btn_rollbutt_on.png" alt="1번" /></a></li>
-                        <li class="seq butt1"><a href="#butt"><img src="././resources/img/btn_rollbutt_off.png" alt="2번" /></a></li>
-                        <li class="seq butt2"><a href="#butt"><img src="././resources/img/btn_rollbutt_off.png" alt="3번" /></a></li>
-                        <li class="rollstop"><a href="#" class="stop"><img src="././resources/img/btn_roll_stop.png" alt="멈춤" /></a></li>
-                        <li class="rollplay"><a href="#" class="play"><img src="././resources/img/btn_roll_play.png" alt="재생" /></a></li>
+                        <li class="seq butt0"><a href="#butt"><img src="img/btn_rollbutt_on.png" alt="1번" /></a></li>
+                        <li class="seq butt1"><a href="#butt"><img src="img/btn_rollbutt_off.png" alt="2번" /></a></li>
+                        <li class="seq butt2"><a href="#butt"><img src="img/btn_rollbutt_off.png" alt="3번" /></a></li>
+                        <li class="rollstop"><a href="#" class="stop"><img src="img/btn_roll_stop.png" alt="멈춤" /></a></li>
+                        <li class="rollplay"><a href="#" class="play"><img src="img/btn_roll_play.png" alt="재생" /></a></li>
                     </ul>
                 </div><!-- //rollbtnArea -->
 
@@ -132,13 +132,13 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="javascript:;"><img src="././resources/img/mainslide_mob01.jpg" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?" /></a>
+                        <a href="javascript:;"><img src="img/mainslide_mob01.jpg" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?" /></a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="javascript:;"><img src="././resources/img/mainslide_mob02.jpg" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?" /></a>
+                        <a href="javascript:;"><img src="img/mainslide_mob02.jpg" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?" /></a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="javascript:;"><img src="././resources/img/mainslide_mob03.jpg" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?" /></a>
+                        <a href="javascript:;"><img src="img/mainslide_mob03.jpg" alt="TRUST & INFORMATION 믿을 수 있는 여행정보, 여행... 어디로 가세요?" /></a>
                     </div>
                 </div>						
                 <div class="swiper-pagination"></div>
@@ -154,19 +154,19 @@
 			<div class="about_box">
 				<ul class="place_list box_inner clear">
 					<li><a href="#" onclick="$('.popup_base').css('height',$(document).height());$('.contact_pop').show();">
-							<img class="img_topplace" src="././resources/img/img_topplace01.jpg" alt="다리를 높이 들어 운동" />
+							<img class="img_topplace" src="img/img_topplace01.jpg" alt="다리를 높이 들어 운동" />
 							<h3>성패트릭 대성당</h3>
 							<p class="txt">바쁜 뉴욕 안에서 정교하면서도 웅장한 기운에 침묵하게 되는 기도의 시간!</p>
 							<span class="view">VIEW</span></a>
 					</li>
 					<li><a href="#" onclick="$('.popup_base').css('height',$(document).height());$('.space_pop').show();">
-							<img class="img_topplace" src="././resources/img/img_topplace02.jpg" alt="바닷가에서 스트레칭" />
+							<img class="img_topplace" src="img/img_topplace02.jpg" alt="바닷가에서 스트레칭" />
 							<h3>원주 뮤지엄 '산'</h3>
 							<p class="txt">전시된 유산들을 담아낸 건물에 신비로운 돌과 물의 테마가 담겨 있다.</p>
 							<span class="view">VIEW</span></a>
 					</li>
 					<li><a href="#" onclick="$('.popup_base').css('height',$(document).height());$('.program_pop').show();">
-							<img class="img_topplace" src="././resources/img/img_topplace03.jpg" alt="앉아서 스트레칭" />
+							<img class="img_topplace" src="img/img_topplace03.jpg" alt="앉아서 스트레칭" />
 							<h3>일본 만국박람회 기념공원</h3>
 							<p class="txt">오사카 센리 반파쿠에는 드넓은 대지에 정원과 들, 물과 함께 하는 문화가 있다.</p>
 							<span class="view">VIEW</span></a>
