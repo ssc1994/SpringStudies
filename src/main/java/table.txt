@@ -12,3 +12,12 @@ create table score (
     kor int default 0,
     eng int default 0
 );
+
+
+
+create table board (
+	num int primary key auto_increment,
+    name varchar(30) not null,
+    title varchar(50) default "제목",
+    content varchar(500) default "내용"
+)

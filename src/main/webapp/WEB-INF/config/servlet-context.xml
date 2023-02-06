@@ -27,6 +27,7 @@
 	
 	<!-- 2nd service영역을 bean으로 생성한다 -->
 	<beans:bean class="com.simple.score.service.ScoreServiceImpl"/>
+	<beans:bean class="com.simple.board.service.BoardServiceImpl"/>
 	
 	
 	

@@ -37,10 +37,11 @@
 	<bean class="org.mybatis.spring.SqlSessionFactoryBean">
 		<!-- 데이터베이스 정보 전달 -->
 		<property name="dataSource" ref="ds"/>
+		<property name="configLocation" value="classpath:/mybatis-config/mybatis-config.xml"></property>
 	</bean>
 	
 	<!-- 마이바티스 관련 어노테이션을 찾아서 설정으로 등록 -->
-	<mybatis-spring:scan base-package="com.simple.basic.mapper"/>
+	<mybatis-spring:scan base-package="com.simple.*"/>
 	
 		
 </beans>
