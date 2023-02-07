@@ -8,6 +8,6 @@
   	<!-- com.simple.command.ScoreVO를 ScoreVO로 줄여서 사용하겠다는 뜻 -->
   <configuration>
   	<typeAliases>
-  	
+  		<typeAlias type="com.ssc.myweb.command.TripVO" alias="TripVO"/>
   	</typeAliases>
   </configuration>
