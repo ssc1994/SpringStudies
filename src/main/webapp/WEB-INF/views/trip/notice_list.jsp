@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 	<div id="container">
 		<!-- location_area -->
 		<div class="location_area customer">
@@ -17,7 +18,7 @@
 
 		<!-- bodytext_area -->
 		<div class="bodytext_area box_inner">
-			<form action="#" class="minisrch_form">
+			<form action="#/.,, " class="minisrch_form">
 				
 				<fieldset>
 					<select name="###" style="height: 35px;">
@@ -42,18 +43,26 @@
 					</tr>
 				</thead>
 				<tbody>
-				<c:forEach items="${list }" var="li" varStatus="num">
+				<c:forEach items="${list }" var="vo" varStatus="num">
 					<tr>
-						<td>${num.index+1 }</td>
-						<td>${li.title }</td>
-						<td>${li.hit }</td>
-						<td>${li.regdate }</td>
+						<td>${num.count }</td>
+						<td class="tit_notice"><a href="notice_view?tno=${vo.tno }">${vo.title }</a></td>
+						<td>${vo.hit }</td>
+						<td><fmt:formatDate value="${vo.regdate }" pattern="YYYY-MM-dd" /></td>
 					</tr>
 				</c:forEach>
-				
-				
-					
-				</tbody>
+
+
+				<tr>
+					<td>2</td>
+					<td class="tit_notice"><a href="javascript:;">박물관 미션 투어 응모
+							당첨자 발표</a></td>
+					<td>123</td>
+					<td>2018-08-01</td>
+				</tr>
+
+
+			</tbody>
 			</table>
 			<!-- pagination -->
 			<div class="pagination">
