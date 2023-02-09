@@ -1,5 +1,7 @@
 package com.ssc.myweb;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +10,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.ssc.myweb.command.TripVO;
 import com.ssc.myweb.trip.service.TripMapper;
+import com.ssc.myweb.util.Criteria;
 
 
 //JUnit으로 테스트환경을 구성
@@ -28,6 +31,14 @@ public class PageTest {
 //		}
 //	}
 	
-	
+	@Test
+	public void testCode02() {
+//		Criteria cri = new Criteria();		//1,10
+		Criteria cri = new Criteria(2,10);		//2,10
+		ArrayList<TripVO> list = tripMapper.getList(cri);
+		
+		list.stream().forEach(x->System.out.println(x));
+		
+	}
 
 }
