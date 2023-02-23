@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.simple.basic.command.UsersVO;
 
@@ -45,6 +46,15 @@ public class UserController {
 	
 	@GetMapping("/mypage")
 	public String mypage() {
+		
+		  //세션검사 -
+	      /* 세션검사 해 줄 페이지가 적을 땐 하나씩 해도 되지만 페이지가 많다면 번거롭기 때문에 필터나 인터셉터를 사용
+	      if(session.getAttribute("user_id") == null) {
+	         return "redirect:/user/login";
+	      }
+	      */
+		System.out.println("컨트롤러 실행함");
+		
 		return "user/mypage";
 	}
 	
@@ -52,6 +62,7 @@ public class UserController {
 	public String info() {
 		return "user/info";
 	}
+	
 	
 
 }
