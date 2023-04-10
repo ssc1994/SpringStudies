@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- list or map 의 의존성 주입 -->
+	<bean id="customer" class="ex03.Customer">
+		
+		<!-- list안에 person -->
+		<property name="lists">
+			<list>
+				<value>홍길동</value>
+				<value>이순신</value>
+				<value>홍길자</value>
+			</list>
+		</property>
+		
+		<!-- list안에 object -->
+		<property name="persons">
+			<list>
+				<bean class="ex03.Person">
+					<property name="name" value="홍길동"></property>
+					<property name="id" value="aaa123"></property>
+				</bean>
+				<bean class="ex03.Person">
+					<property name="name" value="홍길자"></property>
+					<property name="id" value="bbb123"></property>
+				</bean>
+				<bean class="ex03.Person">
+					<property name="name" value="이순신"></property>
+					<property name="id" value="ccc123"></property>
+				</bean>
+			</list>
+		</property>
+		
+		<!-- map안에 object -->
+		<property name="maps">
+			<map>
+				<entry key="k1" value="문자열"/>
+				<entry key="k2">
+					<bean class="ex03.Person">
+						<property name="name" value="이순신"></property>
+						<property name="id" value="ccc123"></property>
+					</bean>
+				</entry>
+			</map>
+		</property>
+		
+	</bean>
+
+</beans>

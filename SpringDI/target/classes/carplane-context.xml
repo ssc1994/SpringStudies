@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="battery1" class="ex04.Battery1"/>
+	<bean id="battery2" class="ex04.Battery2"/>
+	
+	<bean id="car" class="ex04.Car">
+		<constructor-arg ref="battery1" />
+	</bean>
+	
+	<bean id="airplane" class="ex04.Airplane">
+		<property name="battery" ref="battery2"/>
+	</bean>
+
+</beans>

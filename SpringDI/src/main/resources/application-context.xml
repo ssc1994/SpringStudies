@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- 스프링 빈 설정 파일 -->
+	<bean id="test" class="ex01.SpringTest" scope="prototype"/>
+	
+	<!-- 생성자를 통한 주입 -->
+	<bean id="chef" class="ex02.Chef" />
+	<bean id="hotel" class="ex02.Hotel" >
+		<constructor-arg ref="chef" />
+	</bean>
+	
+	<!-- 세터를 통한 주입 -->
+	<bean id="dev" class="ex02.DatabaseDev">
+		<property name="url" value="데이터베이스주소"/>
+		<property name="uid" value="데이터베이스계정명"/>
+		<property name="upw" value="데이터베이스비밀번호"/>
+	</bean>
+	
+	<bean id="dao" class="ex02.MemberDAO">
+		<property name="databaseDev" ref="dev" />
+	</bean>
+	
+	
+</beans>
