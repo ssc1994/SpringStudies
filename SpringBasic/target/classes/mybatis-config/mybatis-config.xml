@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+  
+  
+  	<!-- 마이바티스 부연 설정관련 xml파일이 된다.  -->
+  	<!-- com.simple.command.ScoreVO를 ScoreVO로 줄여서 사용하겠다는 뜻 -->
+  <configuration>
+  	<typeAliases>
+		<typeAlias type="com.simple.command.ScoreVO" alias="ScoreVO"/>  
+		<typeAlias type="com.simple.command.BoardVO" alias="BoardVO"/>  
+  	</typeAliases>
+  </configuration>
